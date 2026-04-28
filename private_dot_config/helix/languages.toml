@@ -1,0 +1,270 @@
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+config.hostInfo = "helix"
+config.typescript.inlayHints.parameterNames.enabled = "all"
+config.typescript.inlayHints.variableTypes.enabled = true
+config.typescript.inlayHints.returnTypes.enabled = true
+config.typescript.inlayHints.propertyDeclarationTypes.enabled = true
+config.javascript.inlayHints.parameterNames.enabled = "all"
+config.javascript.inlayHints.variableTypes.enabled = true
+
+[language-server.oxlint]
+command = "oxlint"
+args = ["--lsp"]
+
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
+
+[language-server.vscode-eslint-language-server]
+command = "vscode-eslint-language-server"
+args = ["--stdio"]
+
+[language-server.vscode-eslint-language-server.config]
+validate = "on"
+rulesCustomizations = []
+run = "onType"
+problems = { shortenToSingleLine = false }
+experimental = { useFlatConfig = true }
+
+[language-server.gopls]
+command = "gopls"
+
+[language-server.gopls.config]
+hints = { assignVariableTypes = true, compositeLiteralFields = true, constantValues = true, functionTypeParameters = true, parameterNames = true, rangeVariableTypes = true }
+staticcheck = true
+analyses = { unusedparams = true, unusedvariable = true, unusedwrite = true, useany = true }
+
+[language-server.vscode-json-language-server]
+command = "vscode-json-language-server"
+args = ["--stdio"]
+config.provideFormatter = true
+config.json.validate.enable = true
+
+[language-server.svelteserver]
+command = "svelteserver"
+args = ["--stdio"]
+
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config.typescript.tsdk = "./node_modules/typescript/lib"
+
+[language-server.taplo]
+command = "taplo"
+args = ["lsp", "stdio"]
+
+[language-server.zls]
+command = "zls"
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+check = { command = "clippy", features = "all" }
+procMacro = { enable = true }
+cargo = { features = "all", buildScripts.enable = true }
+inlayHints = { parameterHints.enable = true, typeHints.enable = true, chainingHints.enable = true, closingBraceHints.enable = true }
+
+[language-server.vscode-html-language-server]
+command = "vscode-html-language-server"
+args = ["--stdio"]
+
+[language-server.vscode-css-language-server]
+command = "vscode-css-language-server"
+args = ["--stdio"]
+config.provideFormatter = true
+
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
+[language-server.tailwindcss-ls.config]
+userLanguages = { astro = "html", svelte = "html", javascript = "javascript", typescript = "typescript", javascriptreact = "javascriptreact", typescriptreact = "typescriptreact" }
+
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]
+
+[language-server.pylsp]
+command = "pylsp"
+
+[language-server.pylsp.config.pylsp.plugins]
+pyflakes = { enabled = true }
+pylsp_mypy = { enabled = true }
+black = { enabled = true }
+isort = { enabled = true }
+
+[language-server.bash-language-server]
+command = "bash-language-server"
+args = ["start"]
+
+[language-server.yaml-language-server]
+command = "yaml-language-server"
+args = ["--stdio"]
+config.yaml.validate = true
+config.yaml.hover = true
+config.yaml.completion = true
+
+[language-server.marksman]
+command = "marksman"
+args = ["server"]
+
+[language-server.sqls]
+command = "sqls"
+
+[[language]]
+name = "javascript"
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  "oxlint",
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "%{buffer_name}"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  "oxlint",
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "%{buffer_name}"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  "oxlint",
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "%{buffer_name}"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  "oxlint",
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "%{buffer_name}"] }
+auto-format = true
+
+[[language]]
+name = "json"
+language-servers = [
+  { name = "vscode-json-language-server", except-features = ["format"] },
+]
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "%{buffer_name}"] }
+auto-format = true
+
+[[language]]
+name = "go"
+language-servers = ["gopls"]
+formatter = { command = "sh", args = ["-c", "goimports"] }
+auto-format = true
+
+[language.debugger]
+name = "go"
+transport = "stdio"
+command = "dlv"
+args = ["dap"]
+templates = [
+  { name = "source", request = "launch", completion = [{ name = "entrypoint", completion = "filename", default = "." }], args = { mode = "debug", program = "{0}" } },
+  { name = "binary", request = "launch", completion = [{ name = "binary", completion = "filename" }], args = { mode = "exec", program = "{0}" } },
+  { name = "test", request = "launch", completion = [{ name = "tests", completion = "filename", default = "." }], args = { mode = "test", program = "{0}" } },
+  { name = "attach", request = "attach", completion = [{ name = "pid", completion = "pid" }], args = { mode = "local", processId = "{0}" } },
+]
+
+[[language]]
+name = "gotmpl"
+file-types = ["gohtml", "tmpl"]
+language-servers = ["gopls", "vscode-html-language-server"]
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}", "--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+auto-format = true
+
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+auto-format = true
+
+[[language]]
+name = "svelte"
+auto-format = true
+language-servers = [
+  { name = "svelteserver", except-features = ["format"] },
+  "vscode-eslint-language-server",
+  { name = "tailwindcss-ls" },
+  "emmet-ls",
+]
+formatter = { command = "prettier", args = ["--parser", "svelte", "--plugin", "prettier-plugin-svelte"] }
+
+[[language]]
+name = "astro"
+language-servers = [
+  { name = "astro-ls" },
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "prettier", args = ["--parser", "astro", "--plugin", "prettier-plugin-astro"] }
+auto-format = true
+
+[[language]]
+name = "toml"
+language-servers = ["taplo"]
+auto-format = true
+
+[[language]]
+name = "html"
+language-servers = [
+  "vscode-html-language-server",
+  "emmet-ls",
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}", "--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [
+  "vscode-css-language-server",
+  { name = "tailwindcss-ls" },
+]
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}", "--parser", "css"] }
+auto-format = true
+
+[[language]]
+name = "yaml"
+language-servers = ["yaml-language-server"]
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}", "--parser", "yaml"] }
+auto-format = true
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman"]
+
+[[language]]
+name = "bash"
+language-servers = ["bash-language-server"]
+formatter = { command = "shfmt", args = ["-i", "2", "-ci", "-"] }
+auto-format = true
+
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+formatter = { command = "zig", args = ["fmt", "--stdin"] }
+auto-format = true
+
+[[language]]
+name = "sql"
+language-servers = ["sqls"]
+formatter = { command = "sql-formatter", args = ["-l", "sql"] }
+auto-format = true

@@ -1,0 +1,68 @@
+inherits = "boo_berry"
+
+# --- Syntax (stronger Hazy accents) ---
+keyword = { fg = "text", modifiers = ["bold"] }
+"keyword.directive" = { fg = "text", modifiers = ["bold"] }
+
+function = { fg = "primary", modifiers = ["bold"] }
+"function.builtin" = { fg = "primary", modifiers = ["bold"] }
+tag = "primary"
+special = "primary"
+"variable.builtin" = "primary"
+"type.builtin" = "fourth"
+"constant.character.escape" = "primary"
+
+string = "second"
+"variable.other.member" = "third"
+constructor = "fourth"
+
+comment = { fg = "comment", modifiers = ["italic"] }
+
+# --- UI clarity ---
+"ui.linenr" = { fg = "frame" }
+"ui.linenr.selected" = { fg = "text" }
+"ui.virtual.indent-guide" = { fg = "frame" }
+"ui.cursorline.primary" = { bg = "panel" }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+# --- Diagnostics (clear but controlled) ---
+"diagnostic.hint" = { underline = { color = "comment", style = "line" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+
+# --- Diffs ---
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "yellow"
+
+warning = "yellow"
+error = "red"
+info = "blue"
+hint = "comment"
+
+[palette]
+berry = "#18121A"
+berry_saturated = "#27202D"
+background = "#18121A"
+panel = "#27202D"
+
+selection = "#0D2847"
+
+text = "#f2eaff"
+text2 = "#d7c9df"
+comment = "#6A5677"
+frame = "#6C607A"
+
+primary = "#ff8fc4"
+second  = "#f9bbff"
+third   = "#b4b7f2"
+fourth  = "#96ccff"
+fifth   = "#b2ffe3"
+
+green = "#8cfba2"
+yellow = "#fbe88c"
+red = "#fb9b8c"
+blue = "#8cc9fb"

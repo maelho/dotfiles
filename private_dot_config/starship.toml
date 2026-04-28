@@ -1,0 +1,413 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = "crimson_blood"
+# palette = "poimandres_term"
+# palette = "ashen"
+# palette = "monolisa"
+# palette = "catppuccin_mocha"
+
+add_newline = false
+
+[character]
+disabled = false
+success_symbol = "[➜](bold fg:primary)"
+error_symbol = "[➜](bold fg:red)"
+
+[aws]
+symbol = " "
+
+[buf]
+symbol = " "
+
+[bun]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+style = "bold fg:third"
+read_only_style = "fg:red"
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fortran]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[gradle]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+style = "fg:comment"
+
+[meson]
+symbol = "󰔷 "
+style = "fg:blue"
+
+[nim]
+symbol = "󰆥 "
+style = "fg:yellow"
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[package]
+symbol = "󰏗 "
+style = "fg:frame"
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+style = "fg:green"
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+style = "fg:blue"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+style = "fg:primary"
+
+[scala]
+symbol = " "
+
+[status]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[xmake]
+symbol = " "
+
+[zig]
+symbol = " "
+
+[palettes.night_rider]
+background = "#1e1c3f"
+primary    = "#D8608C"
+second     = "#e591ff"
+third      = "#AC70FC"
+fourth     = "#7EA7FB"
+fifth      = "#74FEE1"
+text       = "#C9CBDB"
+text2      = "#696292"
+comment    = "#5C588A"
+panel      = "#171530"
+frame      = "#625D88"
+green      = "#45F5CF"
+yellow     = "#F1C56C"
+red        = "#FF6E9C"
+blue       = "#7DA7FF"
+
+[palettes.crimson]
+background = "#0b070e"
+primary    = "#ff9dc4"
+second     = "#f2b8f5"
+third      = "#cab5f7"
+fourth     = "#c5ecff"
+fifth      = "#aadece"
+text       = "#e8daf8"
+text2      = "#9e8db8"
+comment    = "#876e98"
+panel      = "#130d16"
+frame      = "#4a3860"
+green      = "#aadece"
+yellow     = "#ffb8b3"
+red        = "#f07898"
+blue       = "#a5d0fa"
+
+[palettes.crimson_dark]
+background = "#151218"
+primary    = "#db2777"
+second     = "#f888b5"
+third      = "#baa4ed"
+fourth     = "#b3ddf1"
+fifth      = "#96d0bb"
+text       = "#d2c7e1"
+text2      = "#8e849a"
+comment    = "#7b6a8e"
+panel      = "#1d1921"
+frame      = "#3e3547"
+green      = "#96d0bb"
+yellow     = "#f1a19d"
+red        = "#d071a4"
+blue       = "#8cbaf0"
+
+[palettes.crimson_blood]
+background = "#0b070e"
+primary    = "#F888B5"
+second     = "#f888b5"
+third      = "#baa4ed"
+fourth     = "#b3ddf1"
+fifth      = "#96d0bb"
+text       = "#d2c7e1"
+text2      = "#8e7ea3"
+comment    = "#7b6a8e"
+panel      = "#130f16"
+frame      = "#4a3f59"
+green      = "#96d0bb"
+yellow     = "#f1a19d"
+red        = "#d071a4"
+blue       = "#8cbaf0"
+
+[palettes.monolisa]
+background = "#0f2033"
+primary    = "#e8b84b"
+second     = "#4ec9b0"
+third      = "#5ab8d8"
+fourth     = "#6699cc"
+fifth      = "#89c97a"
+text       = "#c8d8e8"
+text2      = "#8aa0b8"
+comment    = "#557895"
+panel      = "#0a1929"
+frame      = "#1e3a55"
+green      = "#89c97a"
+yellow     = "#e8b84b"
+red        = "#e05a5a"
+blue       = "#6699cc"
+
+[palettes.crimson_light]
+background = "#f7f2fa"
+primary    = "#F888B5"
+second     = "#c51478"
+third      = "#6c4cbc"
+fourth     = "#5579bc"
+fifth      = "#487e70"
+text       = "#673c8b"
+text2      = "#9885b7"
+comment    = "#bba7ce"
+panel      = "#f7f4fa"
+frame      = "#cbabd4"
+green      = "#487e70"
+yellow     = "#9f7449"
+red        = "#b55487"
+blue       = "#5579bc"
+
+
+[palettes.ayumirage]
+error = "#f28779"
+success = "#D5FF80"
+directory = "#FAD07B"
+branch = "#f28779"
+symbol = "#73D0FF"
+status = "#DFBFFF"
+python = "#DCDCAA"
+go = "#9CDCFE"
+node = "#4EC9B0"
+rust = "#4EC9B0"
+
+
+[palettes.poimandres_darker]
+background = "#1b1e28"
+primary    = "#89ddff"
+second     = "#c792ea"
+third      = "#add7ff"
+fourth     = "#5de4c7"
+fifth      = "#fcc5e9"
+text       = "#a6accd"
+text2      = "#767c9d"
+comment    = "#303340"
+panel      = "#1e222d"
+frame      = "#3a3f58"
+green      = "#5de4c7"
+yellow     = "#fcc5e9"
+red        = "#d0679d"
+blue       = "#89ddff"
+
+[palettes.catppuccin_mocha]
+background = "#1e1e2e"  # base
+primary    = "#cba6f7"  # mauve
+second     = "#94e2d5"  # teal
+third      = "#89dceb"  # sky
+fourth     = "#89b4fa"  # blue
+fifth      = "#a6e3a1"  # green
+text       = "#cdd6f4"  # text
+text2      = "#a6adc8"  # subtext0
+comment    = "#6c7086"  # overlay0
+panel      = "#181825"  # mantle
+frame      = "#313244"  # surface0
+green      = "#a6e3a1"
+yellow     = "#f9e2af"
+red        = "#f38ba8"
+blue       = "#89b4fa"
+
+
+[palettes.ashen]
+background = "#121212"  # base00 - darkest
+primary    = "#B14242"  # base08 - red_ember
+second     = "#4A8B8B"  # base09 - blue
+third      = "#C4693D"  # base0A - orange_blaze
+fourth     = "#D87C4A"  # base0D - orange_glow
+fifth      = "#E49A44"  # base0C - orange_smolder
+text       = "#a7a7a7"  # base05
+text2      = "#949494"  # base04
+comment    = "#535353"  # base03
+panel      = "#191919"  # base01
+frame      = "#212121"  # base02
+green      = "#4A8B8B"  # base09 - blue (closest to green)
+yellow     = "#E49A44"  # base0C - orange_smolder
+red        = "#DF6464"  # base0B - red_glowing
+blue       = "#4A8B8B"  # base09 - blue
+
+
+[palettes.poimandres_term]
+background = "#16161e"
+primary    = "#89ddff" # bright accent
+second     = "#fcc5e9" # soft magenta
+third      = "#add7ff" # light blue
+fourth     = "#5de4c7" # cyan/green
+fifth      = "#fffac2" # pale yellow
+text       = "#a6accd"
+text2      = "#767c9d"
+comment    = "#303340"
+panel      = "#1e222d"
+frame      = "#3a3f58"
+green      = "#5de4c7"
+yellow     = "#fffac2"
+red        = "#d0680"
+

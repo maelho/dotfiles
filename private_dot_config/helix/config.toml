@@ -1,0 +1,77 @@
+# theme = "monolisa_c"
+# theme = "curzon"
+# theme = "poimandres_darker"
+theme = "boo_hazy"
+# theme = "ashen"
+
+[editor]
+bufferline = "always"
+color-modes = true
+true-color = true
+line-number = "relative"
+cursorline = false
+end-of-line-diagnostics = "hint"
+scroll-lines = 3
+trim-final-newlines = true
+trim-trailing-whitespace = true
+text-width = 80
+mouse = true
+middle-click-paste = true
+
+[editor.cursor-shape]
+insert = "bar"
+# normal = "underline"
+
+[editor.indent-guides]
+render = true
+# character = "┊"
+
+[editor.gutters]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+[editor.gutters.line-numbers]
+min-width = 1
+
+[editor.whitespace.render]
+space = "all"
+tab = "none"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+
+[editor.whitespace.characters]
+space = "·"
+
+[editor.inline-diagnostics]
+# cursor-line = "hint"
+cursor-line = "warning"
+
+[editor.lsp]
+snippets = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "register", "position", "total-line-numbers", "file-line-ending", "file-encoding"]
+separator = "│"
+
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "↪"  # set wrap-indicator to "" to hide it
+
+[keys.normal]
+"*" = ["move_char_right", "move_prev_word_start", "move_next_word_start", "search_selection"]
+"tab" = "goto_next_buffer"
+"S-tab" = "goto_previous_buffer"
+"A-w" = ":buffer-close"
+"Cmd-s" = ":write"
+
+space.o = [
+  ':sh rm -f /tmp/unique-file',
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
+  ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+]

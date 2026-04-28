@@ -1,0 +1,269 @@
+# MonoLisa Theme for Helix Editor
+# Ported from https://www.monolisa.dev/tester
+# A dark navy theme with warm gold accents
+
+# ── UI ──────────────────────────────────────────────────────────────────────
+
+"ui.background"             = { bg = "bg" }
+"ui.background.separator"   = { fg = "muted", bg = "bg_dark" }
+
+"ui.text"                   = { fg = "fg" }
+"ui.text.focus"             = { fg = "fg_bright", bg = "bg_sel", modifiers = ["bold"] }
+"ui.text.inactive"          = { fg = "fg_dim" }
+"ui.text.info"              = { fg = "gold" }
+"ui.text.directory"         = { fg = "cyan" }
+
+"ui.cursor"                 = { fg = "bg", bg = "fg" }
+"ui.cursor.normal"          = { fg = "bg", bg = "fg" }
+"ui.cursor.insert"          = { fg = "bg", bg = "cyan" }
+"ui.cursor.select"          = { fg = "bg", bg = "gold" }
+"ui.cursor.match"           = { fg = "gold", bg = "bg_highlight", modifiers = ["bold"] }
+"ui.cursor.primary"         = { fg = "bg", bg = "fg_bright" }
+"ui.cursor.primary.normal"  = { fg = "bg", bg = "fg_bright" }
+"ui.cursor.primary.insert"  = { fg = "bg", bg = "cyan" }
+"ui.cursor.primary.select"  = { fg = "bg", bg = "gold" }
+
+"ui.cursorline.primary"     = { bg = "bg_highlight" }
+"ui.cursorline.secondary"   = { bg = "bg_subtle" }
+"ui.cursorcolumn.primary"   = { bg = "bg_subtle" }
+"ui.cursorcolumn.secondary" = { bg = "bg_dark" }
+
+"ui.selection"              = { bg = "bg_sel" }
+"ui.selection.primary"      = { bg = "bg_sel_bright" }
+
+"ui.linenr"                 = { fg = "linenr" }
+"ui.linenr.selected"        = { fg = "gold", modifiers = ["bold"] }
+
+"ui.gutter"                 = { bg = "bg" }
+"ui.gutter.selected"        = { bg = "" }
+
+"ui.statusline"             = { fg = "fg", bg = "bg_status" }
+"ui.statusline.inactive"    = { fg = "muted", bg = "bg_dark" }
+"ui.statusline.normal"      = { fg = "bg_dark", bg = "gold", modifiers = ["bold"] }
+"ui.statusline.insert"      = { fg = "bg_dark", bg = "cyan", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "bg_dark", bg = "orange", modifiers = ["bold"] }
+"ui.statusline.separator"   = { fg = "muted" }
+
+"ui.bufferline"             = { fg = "muted", bg = "bg_dark" }
+"ui.bufferline.active"      = { fg = "fg_bright", bg = "bg_dark", modifiers = ["bold"] }
+"ui.bufferline.background"  = { bg = "bg_dark" }
+
+"ui.popup"                  = { fg = "fg", bg = "bg_float" }
+"ui.popup.info"             = { fg = "fg", bg = "bg_float" }
+
+"ui.help"                   = { fg = "fg", bg = "bg_float" }
+
+"ui.menu"                   = { fg = "fg", bg = "bg_float" }
+"ui.menu.selected"          = { fg = "fg_bright", bg = "bg_sel", modifiers = ["bold"] }
+"ui.menu.scroll"            = { fg = "muted", bg = "bg_dark" }
+
+"ui.window"                 = { fg = "border" }
+
+"ui.picker.header"          = { bg = "bg_dark" }
+"ui.picker.header.column"   = { fg = "muted", modifiers = ["bold"] }
+"ui.picker.header.column.active" = { fg = "gold", modifiers = ["bold"] }
+
+"ui.highlight"              = { bg = "bg_highlight" }
+"ui.highlight.frameline"    = { bg = "bg_highlight" }
+
+"ui.virtual.ruler"          = { bg = "bg_subtle" }
+"ui.virtual.whitespace"     = { fg = "invisible" }
+"ui.virtual.indent-guide"   = { fg = "invisible" }
+"ui.virtual.inlay-hint"     = { fg = "muted", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "blue_muted", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"      = { fg = "cyan_muted", modifiers = ["italic"] }
+"ui.virtual.wrap"           = { fg = "linenr" }
+"ui.virtual.jump-label"     = { fg = "gold", modifiers = ["bold"] }
+
+"ui.debug.breakpoint"       = { fg = "red" }
+"ui.debug.active"           = { fg = "gold" }
+
+# ── Diagnostics ──────────────────────────────────────────────────────────────
+
+"warning"                   = { fg = "gold" }
+"error"                     = { fg = "red" }
+"info"                      = { fg = "blue" }
+"hint"                      = { fg = "muted" }
+
+"diagnostic"                = { underline = { style = "curl" } }
+"diagnostic.warning"        = { underline = { color = "gold", style = "curl" } }
+"diagnostic.error"          = { underline = { color = "red", style = "curl" } }
+"diagnostic.info"           = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint"           = { underline = { color = "muted", style = "dotted" } }
+"diagnostic.unnecessary"    = { modifiers = ["dim"] }
+"diagnostic.deprecated"     = { modifiers = ["crossed_out"] }
+
+"tabstop"                   = { fg = "gold" }
+
+# ── Diff ─────────────────────────────────────────────────────────────────────
+
+"diff.plus"                 = { fg = "green" }
+"diff.plus.gutter"          = { fg = "green" }
+"diff.minus"                = { fg = "red" }
+"diff.minus.gutter"         = { fg = "red" }
+"diff.delta"                = { fg = "blue" }
+"diff.delta.moved"          = { fg = "purple" }
+"diff.delta.conflict"       = { fg = "orange" }
+"diff.delta.gutter"         = { fg = "blue" }
+
+# ── Markup ───────────────────────────────────────────────────────────────────
+
+"markup.heading"            = { fg = "gold", modifiers = ["bold"] }
+"markup.normal.completion"  = { fg = "fg" }
+"markup.normal.hover"       = { fg = "fg" }
+"markup.heading.completion" = { fg = "gold", modifiers = ["bold"] }
+"markup.heading.hover"      = { fg = "gold", modifiers = ["bold"] }
+"markup.raw.inline.completion" = { fg = "orange" }
+"markup.raw.inline.hover"   = { fg = "orange" }
+"markup.heading.marker"     = { fg = "muted" }
+"markup.heading.1"          = { fg = "gold", modifiers = ["bold"] }
+"markup.heading.2"          = { fg = "cyan", modifiers = ["bold"] }
+"markup.heading.3"          = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.4"          = { fg = "purple", modifiers = ["bold"] }
+"markup.heading.5"          = { fg = "orange", modifiers = ["bold"] }
+"markup.heading.6"          = { fg = "fg" }
+"markup.list.unnumbered"    = { fg = "muted" }
+"markup.list.numbered"      = { fg = "muted" }
+"markup.list.checked"       = { fg = "green" }
+"markup.list.unchecked"     = { fg = "muted" }
+"markup.bold"               = { modifiers = ["bold"] }
+"markup.italic"             = { modifiers = ["italic"] }
+"markup.strikethrough"      = { modifiers = ["crossed_out"] }
+"markup.link"               = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.url"           = { fg = "blue", modifiers = ["underlined", "italic"] }
+"markup.link.label"         = { fg = "cyan" }
+"markup.link.text"          = { fg = "fg" }
+"markup.quote"              = { fg = "muted", modifiers = ["italic"] }
+"markup.raw.inline"         = { fg = "orange" }
+"markup.raw.block"          = { fg = "fg" }
+
+# ── Syntax ───────────────────────────────────────────────────────────────────
+
+# Comments
+"comment"                   = { fg = "comment", modifiers = ["italic"] }
+"comment.line"              = { fg = "comment", modifiers = ["italic"] }
+"comment.block"             = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "comment", modifiers = ["italic"] }
+"comment.line.documentation"  = { fg = "comment", modifiers = ["italic"] }
+"comment.unused"            = { fg = "invisible", modifiers = ["italic"] }
+
+# Keywords — gold/yellow like the screenshot
+"keyword"                   = { fg = "gold", modifiers = ["bold"] }
+"keyword.control"           = { fg = "gold", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "gold", modifiers = ["bold"] }
+"keyword.control.repeat"    = { fg = "gold", modifiers = ["bold"] }
+"keyword.control.import"    = { fg = "gold", modifiers = ["bold"] }
+"keyword.control.return"    = { fg = "gold", modifiers = ["italic", "bold"] }
+"keyword.control.exception" = { fg = "gold", modifiers = ["bold"] }
+"keyword.operator"          = { fg = "gold" }
+"keyword.directive"         = { fg = "orange" }
+"keyword.function"          = { fg = "gold", modifiers = ["bold"] }
+"keyword.storage"           = { fg = "gold", modifiers = ["bold"] }
+"keyword.storage.type"      = { fg = "gold", modifiers = ["bold"] }
+"keyword.storage.modifier"  = { fg = "gold" }
+
+# Functions — cyan/teal
+"function"                  = { fg = "func" }
+"function.builtin"          = { fg = "func", modifiers = ["bold"] }
+"function.method"           = { fg = "func" }
+"function.method.private"   = { fg = "func", modifiers = ["italic"] }
+"function.macro"            = { fg = "orange" }
+"function.special"          = { fg = "orange" }
+
+# Types — cyan
+"type"                      = { fg = "cyan" }
+"type.builtin"              = { fg = "cyan", modifiers = ["bold"] }
+"type.parameter"            = { fg = "cyan", modifiers = ["italic"] }
+"type.enum.variant"         = { fg = "orange" }
+
+# Variables
+"variable"                  = { fg = "fg" }
+"variable.builtin"          = { fg = "orange", modifiers = ["italic"] }
+"variable.parameter"        = { fg = "fg", modifiers = ["italic"] }
+"variable.other.member"     = { fg = "fg" }
+"variable.other.member.private" = { fg = "fg", modifiers = ["italic"] }
+
+# Constants
+"constant"                  = { fg = "orange" }
+"constant.builtin"          = { fg = "orange", modifiers = ["bold"] }
+"constant.builtin.boolean"  = { fg = "gold", modifiers = ["bold"] }
+"constant.character"        = { fg = "green" }
+"constant.character.escape" = { fg = "orange" }
+"constant.numeric"          = { fg = "orange" }
+"constant.numeric.integer"  = { fg = "orange" }
+"constant.numeric.float"    = { fg = "orange" }
+
+# Strings — blue-ish
+"string"                    = { fg = "blue" }
+"string.regexp"             = { fg = "orange" }
+"string.special"            = { fg = "cyan" }
+"string.special.path"       = { fg = "cyan", modifiers = ["underlined"] }
+"string.special.url"        = { fg = "blue", modifiers = ["underlined"] }
+"string.special.symbol"     = { fg = "purple" }
+
+# Operators
+"operator"                  = { fg = "fg_bright" }
+
+# Punctuation
+"punctuation"               = { fg = "fg_dim" }
+"punctuation.delimiter"     = { fg = "fg_dim" }
+"punctuation.bracket"       = { fg = "fg_dim" }
+"punctuation.special"       = { fg = "gold" }
+
+# Tags (HTML/JSX)
+"tag"                       = { fg = "gold" }
+"tag.builtin"               = { fg = "gold" }
+
+# Attributes
+"attribute"                 = { fg = "cyan", modifiers = ["italic"] }
+
+# Labels
+"label"                     = { fg = "cyan" }
+
+# Namespace / module
+"namespace"                 = { fg = "cyan", modifiers = ["italic"] }
+
+# Special / derive
+"special"                   = { fg = "orange" }
+
+# Constructor
+"constructor"               = { fg = "cyan" }
+
+# ── Palette ──────────────────────────────────────────────────────────────────
+
+[palette]
+# Backgrounds
+bg          = "#0f2033"
+bg_dark     = "#0a1929"
+bg_status   = "#0d1e2e"
+bg_float    = "#112540"
+bg_subtle   = "#112033"
+bg_highlight = "#172d42"
+bg_sel      = "#1e3a52"
+bg_sel_bright = "#255070"
+
+# Foregrounds
+fg          = "#c8d8e8"
+fg_bright   = "#e8f0f8"
+fg_dim      = "#8aa0b8"
+
+# Syntax colors — matched from the MonoLisa tester screenshot
+gold        = "#e8b84b"    # keywords, for/if/function/return
+cyan        = "#4ec9b0"    # types, parameters
+func        = "#5ab8d8"    # function names (lighter cyan-blue)
+blue        = "#6699cc"    # strings
+orange      = "#f08c5a"    # numbers, builtins, escape chars
+purple      = "#b48ead"    # symbols, special constants
+green       = "#89c97a"    # additions, characters
+red         = "#e05a5a"    # errors, deletions
+
+# Muted / UI colors
+comment     = "#557895"
+muted       = "#3d6080"
+linenr      = "#2e5070"
+border      = "#1e3a55"
+invisible   = "#1e3a52"
+
+# Muted variants for inlay hints
+blue_muted  = "#4d7a99"
+cyan_muted  = "#3a8a78"

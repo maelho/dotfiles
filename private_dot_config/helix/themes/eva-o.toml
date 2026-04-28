@@ -1,0 +1,396 @@
+# Evangelion (dark) for Helix - STRICT EVA RAW
+# No inherits, no derived colors, only original UNIT01 palette hexes.
+
+# -------------------------
+# UI
+# -------------------------
+"ui.background" = { fg = "rei", bg = "bg" }
+"ui.background.separator" = { fg = "unit01" }
+
+"ui.cursor" = { fg = "selee", bg = "lcl" }
+"ui.cursor.primary" = { fg = "selee", bg = "lcl" }
+"ui.cursor.match" = { fg = "atfield", modifiers = ["underlined"] }
+
+"ui.selection" = { fg = "selee", bg = "terminaldogma" }
+"ui.selection.primary" = { fg = "selee", bg = "kaji" }
+
+"ui.cursorline.primary" = { bg = "balthasar" }
+"ui.cursorline.secondary" = { bg = "balthasar" }
+
+"ui.linenr" = { fg = "core", bg = "mari" }
+"ui.linenr.selected" = { fg = "kaworu", bg = "balthasar", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "atfield", bg = "selee", modifiers = ["bold"] }
+"ui.statusline.inactive" = { fg = "fog", bg = "selee", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "bg", bg = "unit01", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "kaji", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "atfield", modifiers = ["bold"] }
+
+"ui.popup" = { fg = "kaworu", bg = "melchior" }
+"ui.popup.info" = { fg = "kaworu", bg = "melchior" }
+"ui.window" = { fg = "unit01", bg = "bg" }
+"ui.help" = { fg = "kaworu", bg = "melchior" }
+
+"ui.text" = { fg = "rei" }
+"ui.text.focus" = { fg = "angel", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "fog" }
+"ui.text.info" = { fg = "adam" }
+"ui.text.directory" = { fg = "terminaldogma" }
+
+"ui.virtual" = { fg = "fog" }
+"ui.virtual.ruler" = { bg = "balthasar" }
+"ui.virtual.whitespace" = { fg = "fog", modifiers = ["bold"] }
+"ui.virtual.indent-guide" = { fg = "casper" }
+"ui.virtual.inlay-hint" = { fg = "shinji", bg = "balthasar" }
+"ui.virtual.wrap" = { fg = "fog" }
+
+"ui.menu" = { fg = "kaworu", bg = "melchior" }
+"ui.menu.selected" = { fg = "selee", bg = "kaji", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "dummyplug", bg = "casper" }
+
+"ui.highlight" = { bg = "balthasar" }
+
+"ui.gutter" = { fg = "fog", bg = "bg" }
+"ui.gutter.selected" = { fg = "kaworu", bg = "bg" }
+
+# -------------------------
+# Diagnostics
+# -------------------------
+"warning" = "lcl"
+"error" = "misato"
+"info" = "dummyplug"
+"hint" = "adam"
+
+"diagnostic" = { modifiers = ["underlined"] }
+"diagnostic.hint" = { fg = "adam", modifiers = ["underlined"] }
+"diagnostic.info" = { fg = "dummyplug", modifiers = ["underlined"] }
+"diagnostic.warning" = { fg = "lcl", modifiers = ["underlined"] }
+"diagnostic.error" = { fg = "misato", modifiers = ["underlined"] }
+
+# -------------------------
+# Syntax
+# -------------------------
+"attribute" = { fg = "lcl" }
+
+"type" = { fg = "kaji", modifiers = ["bold"] }
+"type.builtin" = { fg = "kaji" }
+"type.enum.variant" = { fg = "terminaldogma" }
+"type.parameter" = { fg = "unit00" }
+
+"constructor" = { fg = "kozo" }
+
+"constant" = { fg = "lcl" }
+"constant.builtin" = { fg = "kozo" }
+"constant.builtin.boolean" = { fg = "kaji", modifiers = ["bold"] }
+"constant.character" = { fg = "lcl" }
+"constant.character.escape" = { fg = "penpen" }
+"constant.numeric" = { fg = "terminaldogma" }
+
+"string" = { fg = "dummyplug" }
+"string.regexp" = { fg = "kozo" }
+"string.special" = { fg = "kozo" }
+"string.special.path" = { fg = "lcl" }
+"string.special.symbol" = { fg = "atfield" }
+"string.special.url" = { fg = "kaji", modifiers = ["underlined"] }
+
+"comment" = { fg = "shinji", bg = "balthasar", modifiers = ["italic"] }
+"comment.block" = { fg = "shinji", bg = "balthasar", modifiers = ["italic"] }
+"comment.line" = { fg = "shinji", bg = "balthasar", modifiers = ["italic"] }
+"comment.documentation" = { fg = "gendo", modifiers = ["italic"] }
+
+"variable" = { fg = "rei" }
+"variable.builtin" = { fg = "adam" }
+"variable.parameter" = { fg = "rei" }
+"variable.other.member" = { fg = "ritsuko" }
+
+"label" = { fg = "kaworu", modifiers = ["bold"] }
+"namespace" = { fg = "atfield" }
+
+"function" = { fg = "kaji" }
+"function.builtin" = { fg = "kaji", modifiers = ["bold"] }
+"function.method" = { fg = "kaji" }
+"function.macro" = { fg = "atfield" }
+"function.special" = { fg = "kaji", modifiers = ["bold"] }
+
+"keyword" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.control" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.control.exception" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.operator" = { fg = "atfield" }
+"keyword.directive" = { fg = "atfield" }
+"keyword.function" = { fg = "kaworu", modifiers = ["bold"] }
+"keyword.storage" = { fg = "kaworu", modifiers = ["bold"] }
+
+"operator" = { fg = "atfield" }
+
+"special" = { fg = "kozo" }
+
+"tag" = { fg = "kozo" }
+"tag.builtin" = { fg = "kozo" }
+
+"markup.heading" = { fg = "kaworu", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "atfield" }
+"markup.list" = { fg = "kaworu", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.text" = { fg = "rei" }
+"markup.link.url" = { fg = "kaji", modifiers = ["underlined"] }
+"markup.quote" = { fg = "dummyplug" }
+"markup.raw" = { fg = "dummyplug" }
+
+"diff.plus" = { fg = "selee", bg = "kaworu" }
+"diff.minus" = { fg = "misato", bg = "nerv", modifiers = ["bold"] }
+"diff.delta" = { fg = "selee", bg = "lcl" }
+
+"punctuation" = { fg = "atfield" }
+"punctuation.delimiter" = { fg = "atfield" }
+"punctuation.bracket" = { fg = "atfield" }
+"punctuation.special" = { fg = "atfield" }
+
+# -------------------------
+# Palette (exact from UNIT01)
+# -------------------------
+[palette]
+bg = "#201430"
+core = "#000000"
+dispair = "#101010"
+tokyo3 = "#111111"
+fear = "#151515"
+selee = "#222222"
+casper = "#39274C"
+balthasar = "#39274D"
+melchior = "#402C56"
+gehirn = "#43492A"
+lost = "#444444"
+s2engine = "#452F5C"
+longingus = "#483160"
+nerv = "#5B2B41"
+fog = "#666666"
+mari = "#67478A"
+unit01 = "#875FAF"
+kaworu = "#87FF5F"
+kozo = "#8BD450"
+terminaldogma = "#8EDF5F"
+ritsuko = "#9F50E1"
+kaji = "#9CDA7C"
+shinji = "#A1A0AD"
+adam = "#A4D2EC"
+unit00 = "#9DAFD1"
+dummyplug = "#AB92FC"
+gendo = "#ADA4A0"
+atfield = "#B968FC"
+asuska = "#C586C0"
+lilith = "#CE67F0"
+misato = "#DB6088"
+error = "#BF2D2D"
+angel = "#D4D4D4"
+lcl = "#D99145"
+rei = "#E1D6F8"
+penpen = "#E6BB85"
+
+
+
+
+
+
+# # Evangelion (dark) for Helix - standalone (no inherits)
+
+# # UI
+# "ui.background" = { fg = "fg_main", bg = "bg" }
+# "ui.background.separator" = { fg = "unit01" }
+
+# "ui.cursor" = { fg = "bg", bg = "lcl" }
+# "ui.cursor.primary" = { fg = "bg", bg = "lcl" }
+# "ui.cursor.match" = { fg = "atfield", modifiers = ["underlined"] }
+
+# "ui.selection" = { bg = "selection" }
+# "ui.selection.primary" = { bg = "selection_strong" }
+
+# "ui.cursorline.primary" = { bg = "cursorline" }
+# "ui.cursorline.secondary" = { bg = "cursorline" }
+
+# "ui.linenr" = { fg = "fog", bg = "bg" }
+# "ui.linenr.selected" = { fg = "kaworu", bg = "balthasar", modifiers = ["bold"] }
+
+# "ui.statusline" = { fg = "rei", bg = "balthasar" }
+# "ui.statusline.inactive" = { fg = "shinji", bg = "casper" }
+# "ui.statusline.normal" = { fg = "bg", bg = "unit01", modifiers = ["bold"] }
+# "ui.statusline.insert" = { fg = "bg", bg = "kaji", modifiers = ["bold"] }
+# "ui.statusline.select" = { fg = "bg", bg = "atfield", modifiers = ["bold"] }
+
+# "ui.popup" = { fg = "rei", bg = "melchior" }
+# "ui.popup.info" = { fg = "rei", bg = "melchior" }
+# "ui.window" = { fg = "unit01", bg = "bg" }
+# "ui.help" = { fg = "rei", bg = "melchior" }
+
+# "ui.text" = { fg = "fg_main" }
+# "ui.text.focus" = { fg = "angel", modifiers = ["bold"] }
+# "ui.text.inactive" = { fg = "shinji" }
+# "ui.text.info" = { fg = "adam" }
+# "ui.text.directory" = { fg = "kaji" }
+
+# "ui.virtual" = { fg = "fog" }
+# "ui.virtual.ruler" = { bg = "balthasar" }
+# "ui.virtual.whitespace" = { fg = "casper" }
+# "ui.virtual.indent-guide" = { fg = "casper" }
+# "ui.virtual.inlay-hint" = { fg = "shinji", bg = "balthasar" }
+# "ui.virtual.wrap" = { fg = "fog" }
+
+# "ui.menu" = { fg = "rei", bg = "melchior" }
+# "ui.menu.selected" = { fg = "bg", bg = "kaji", modifiers = ["bold"] }
+# "ui.menu.scroll" = { fg = "dummyplug", bg = "casper" }
+
+# "ui.highlight" = { bg = "balthasar" }
+
+# "ui.gutter" = { fg = "fog", bg = "bg" }
+# "ui.gutter.selected" = { fg = "kaworu", bg = "bg" }
+
+# # Diagnostics
+# "warning" = "lcl"
+# "error" = "misato"
+# "info" = "dummyplug"
+# "hint" = "adam"
+
+# "diagnostic" = { modifiers = ["underlined"] }
+# "diagnostic.hint" = { fg = "adam", modifiers = ["underlined"] }
+# "diagnostic.info" = { fg = "dummyplug", modifiers = ["underlined"] }
+# "diagnostic.warning" = { fg = "lcl", modifiers = ["underlined"] }
+# "diagnostic.error" = { fg = "misato", modifiers = ["underlined"] }
+
+# # Syntax
+# "attribute" = { fg = "lilith" }
+
+# "type" = { fg = "type_fg", modifiers = ["bold"] }
+# "type.builtin" = { fg = "type_builtin" }
+# "type.enum.variant" = { fg = "terminaldogma" }
+# "type.parameter" = { fg = "unit00" }
+
+# "constructor" = { fg = "kozo" }
+
+# "constant" = { fg = "lcl" }
+# "constant.builtin" = { fg = "kozo" }
+# "constant.builtin.boolean" = { fg = "kaji", modifiers = ["bold"] }
+# "constant.character" = { fg = "lcl" }
+# "constant.character.escape" = { fg = "penpen" }
+# "constant.numeric" = { fg = "terminaldogma" }
+
+# "string" = { fg = "dummyplug" }
+# "string.regexp" = { fg = "asuska" }
+# "string.special" = { fg = "adam" }
+# "string.special.path" = { fg = "kaji" }
+# "string.special.symbol" = { fg = "atfield" }
+# "string.special.url" = { fg = "kaji", modifiers = ["underlined"] }
+
+# "comment" = { fg = "comment_fg", modifiers = ["italic"] }
+# "comment.block" = { fg = "comment_fg", modifiers = ["italic"] }
+# "comment.line" = { fg = "comment_fg", modifiers = ["italic"] }
+# "comment.documentation" = { fg = "comment_doc", modifiers = ["italic"] }
+
+# "variable" = { fg = "fg_main" }
+# "variable.builtin" = { fg = "adam" }
+# "variable.parameter" = { fg = "fg_param" }
+# "variable.other.member" = { fg = "ritsuko" }
+
+# "label" = { fg = "kaworu", modifiers = ["bold"] }
+# "namespace" = { fg = "unit00" }
+
+# "function" = { fg = "fn" }
+# "function.builtin" = { fg = "kaji", modifiers = ["bold"] }
+# "function.method" = { fg = "fn" }
+# "function.macro" = { fg = "atfield" }
+# "function.special" = { fg = "kaji", modifiers = ["bold"] }
+
+# "keyword" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.control" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.control.conditional" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.control.repeat" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.control.import" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.control.return" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.control.exception" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.operator" = { fg = "kw_op" }
+# "keyword.directive" = { fg = "kw_op" }
+# "keyword.function" = { fg = "kw", modifiers = ["bold"] }
+# "keyword.storage" = { fg = "kw", modifiers = ["bold"] }
+
+# "operator" = { fg = "kw_op" }
+
+# "special" = { fg = "kozo" }
+
+# "tag" = { fg = "kaworu" }
+# "tag.builtin" = { fg = "kaji", modifiers = ["bold"] }
+
+# "markup.heading" = { fg = "kaworu", modifiers = ["bold"] }
+# "markup.heading.marker" = { fg = "atfield" }
+# "markup.list" = { fg = "atfield" }
+# "markup.bold" = { modifiers = ["bold"] }
+# "markup.italic" = { modifiers = ["italic"] }
+# "markup.strikethrough" = { modifiers = ["crossed_out"] }
+# "markup.link.text" = { fg = "rei" }
+# "markup.link.url" = { fg = "kaji", modifiers = ["underlined"] }
+# "markup.quote" = { fg = "dummyplug" }
+# "markup.raw" = { fg = "dummyplug" }
+
+# "diff.plus" = { fg = "kaworu" }
+# "diff.minus" = { fg = "misato" }
+# "diff.delta" = { fg = "lcl" }
+
+# "punctuation" = { fg = "punct" }
+# "punctuation.delimiter" = { fg = "punct" }
+# "punctuation.bracket" = { fg = "punct" }
+# "punctuation.special" = { fg = "atfield" }
+
+# [palette]
+# bg = "#201430"
+# core = "#000000"
+# dispair = "#101010"
+# tokyo3 = "#111111"
+# fear = "#151515"
+# selee = "#222222"
+# casper = "#39274C"
+# balthasar = "#39274D"
+# melchior = "#402C56"
+# gehirn = "#43492A"
+# lost = "#444444"
+# s2engine = "#452F5C"
+# longingus = "#483160"
+# nerv = "#5B2B41"
+# fog = "#666666"
+# mari = "#67478A"
+# unit01 = "#875FAF"
+# kaworu = "#87FF5F"
+# kozo = "#8BD450"
+# terminaldogma = "#8EDF5F"
+# ritsuko = "#9F50E1"
+# kaji = "#9CDA7C"
+# shinji = "#A1A0AD"
+# adam = "#A4D2EC"
+# unit00 = "#9DAFD1"
+# dummyplug = "#AB92FC"
+# gendo = "#ADA4A0"
+# atfield = "#B968FC"
+# asuska = "#C586C0"
+# lilith = "#CE67F0"
+# misato = "#DB6088"
+# error = "#BF2D2D"
+# angel = "#D4D4D4"
+# lcl = "#D99145"
+# rei = "#E1D6F8"
+# penpen = "#E6BB85"
+
+# fg_main = "#E4DBF6"
+# fg_param = "#F0EAFE"
+# comment_fg = "#9A8FAF"
+# comment_doc = "#A89DBB"
+# punct = "#B9AED0"
+# fn = "#92E56A"
+# type_fg = "#A7E07C"
+# type_builtin = "#93D3F0"
+# kw = "#98FF6A"
+# kw_op = "#C47AFF"
+# cursorline = "#2B1F3F"
+# selection = "#3B2A53"
+# selection_strong = "#4A3466"

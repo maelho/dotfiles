@@ -1,0 +1,9 @@
+# inherits = "ayu_dark"
+
+inherits = "boo_berry"
+
+"ui.background"  =""
+
+[palette]
+berry = "#18121A"
+berry_saturated = "#27202D"

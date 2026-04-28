@@ -1,0 +1,108 @@
+inherits = "base16_default"
+
+# --- Syntax (muted like nvim screenshot) ---
+"keyword" = { fg = "lavender", modifiers = ["bold"] }
+"keyword.control" = { fg = "lavender", modifiers = ["bold"] }
+"keyword.operator" = "lavender"
+
+"type" = { fg = "lavender", modifiers = ["bold"] }
+"type.builtin" = "lavender_soft"
+"type.parameter" = "fg_soft"
+
+"function" = "green"
+"function.method" = "green"
+"function.builtin" = { fg = "green", modifiers = ["bold"] }
+
+"variable" = "fg"
+"variable.parameter" = "fg_soft"
+"variable.other.member" = "fg"
+
+"string" = "green"
+"string.special" = "green"
+
+"constant" = "lavender"
+"constant.numeric" = "amber"
+"constant.character" = "amber"
+
+"operator" = "lavender"
+"punctuation" = "fg_soft"
+"punctuation.bracket" = "lavender_soft"
+"punctuation.delimiter" = "fg_soft"
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment2", modifiers = ["italic"] }
+
+"namespace" = "lavender_soft"
+"tag" = "lavender"
+"attribute" = "lavender_soft"
+"special" = "lavender"
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "amber"
+
+# --- UI ---
+"ui.background" = { bg = "bg" }
+"ui.text" = { fg = "fg" }
+
+"ui.linenr" = { fg = "gutter" }
+"ui.linenr.selected" = { fg = "lavender", modifiers = ["bold"] }
+"ui.gutter" = { fg = "gutter", bg = "bg" }
+"ui.gutter.selected" = { fg = "lavender_soft", bg = "bg2" }
+
+"ui.cursor" = { fg = "bg", bg = "lavender" }
+"ui.cursor.primary" = { fg = "bg", bg = "green" }
+"ui.cursor.match" = { fg = "amber", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "sel" }
+"ui.selection.primary" = { bg = "sel2" }
+
+"ui.cursorline.primary" = { bg = "bg2" }
+"ui.cursorline.secondary" = { bg = "bg2" }
+
+"ui.statusline" = { fg = "fg", bg = "status" }
+"ui.statusline.inactive" = { fg = "comment", bg = "bg2" }
+"ui.statusline.normal" = { fg = "bg", bg = "green" }
+"ui.statusline.insert" = { fg = "bg", bg = "lavender" }
+"ui.statusline.select" = { fg = "bg", bg = "amber" }
+
+"ui.popup" = { fg = "fg", bg = "bg2" }
+"ui.menu" = { fg = "fg", bg = "bg2" }
+"ui.menu.selected" = { fg = "fg", bg = "sel" }
+
+"ui.window" = { fg = "border" }
+"ui.virtual.whitespace" = "gutter"
+"ui.virtual.indent-guide" = "border"
+"ui.virtual.ruler" = { bg = "bg3" }
+
+"warning" = { fg = "amber", modifiers = ["bold"] }
+"error" = { fg = "red", modifiers = ["bold"] }
+"info" = "lavender_soft"
+"hint" = "green"
+
+"diagnostic.hint" = { underline = { style = "dotted", color = "green" } }
+"diagnostic.info" = { underline = { style = "dotted", color = "lavender_soft" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "amber" } }
+"diagnostic.error" = { underline = { style = "curl", color = "red" } }
+
+[palette]
+# darker + less saturated than previous version
+bg = "#1A1030"
+bg2 = "#22143B"
+bg3 = "#2A1A47"
+status = "#3A2558"
+sel = "#3B2A56"
+sel2 = "#4A3269"
+
+fg = "#B8BED8"
+fg_soft = "#A79EC9"
+comment = "#7E76A7"
+comment2 = "#8D84B6"
+gutter = "#6D6298"
+border = "#5A4D87"
+
+lavender = "#B06CFF"
+lavender_soft = "#97A8D6"
+green = "#87E96A"
+amber = "#D59A46"
+red = "#D85E78"
