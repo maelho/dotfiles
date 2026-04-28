@@ -1,0 +1,32 @@
+# MonoLisa theme for Ghostty terminal
+# Ported from /Users/maelho/.config/helix/themes/monolisa.toml
+
+# Core colors
+# Helix background reference: bg = #0f2033
+background            = #0f2033
+foreground            = #c8d8e8
+cursor-color          = #e8b84b
+cursor-text           = #0a1929
+selection-background  = #255070
+selection-foreground  = #e8f0f8
+
+# ANSI palette
+# Normal colors (0-7)
+palette = 0=#0a1929
+palette = 1=#e05a5a
+palette = 2=#89c97a
+palette = 3=#e8b84b
+palette = 4=#6699cc
+palette = 5=#b48ead
+palette = 6=#4ec9b0
+palette = 7=#c8d8e8
+
+# Bright colors (8-15)
+palette = 8=#172d42
+palette = 9=#f08c5a
+palette = 10=#89c97a
+palette = 11=#e8b84b
+palette = 12=#5ab8d8
+palette = 13=#b48ead
+palette = 14=#4ec9b0
+palette = 15=#e8f0f8

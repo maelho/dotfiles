@@ -1,0 +1,48 @@
+shell-integration = detect
+
+theme = hazyland
+# theme = "Poimandres Darker"
+# theme = "ashen"
+# background = 000
+
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+scrollbar = never
+
+# font-family = "JetBrainsMonoNL Nerd Font Mono"
+# font-family = MonoLisa
+font-family = Berkeley Mono
+font-size = 12
+adjust-cell-height = 1
+font-thicken = true
+font-feature = +calt
+font-feature = +liga
+font-feature = +dlig
+font-feature = +zero
+font-shaping-break = no-cursor
+
+macos-titlebar-style = tabs
+macos-window-buttons = hidden
+macos-option-as-alt = true
+
+window-padding-x = 10
+window-padding-y = 0
+window-save-state = always
+window-colorspace = "display-p3"
+window-padding-balance = true
+
+auto-update-channel = tip
+
+# splits
+keybind = alt+v=new_split:right
+keybind = alt+s=new_split:down
+
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:down
+keybind = alt+k=goto_split:up
+keybind = alt+l=goto_split:right
+
+keybind = alt+shift+h=resize_split:left,10
+keybind = alt+shift+j=resize_split:down,10
+keybind = alt+shift+k=resize_split:up,10
+keybind = alt+shift+l=resize_split:right,10

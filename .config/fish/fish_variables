@@ -1,0 +1,52 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23313244\x2cbg\x3a\x231E1E2E\x2cspinner\x3a\x23F5E0DC\x2chl\x3a\x23F38BA8\x20\x2d\x2dcolor\x3dfg\x3a\x23CDD6F4\x2cheader\x3a\x23F38BA8\x2cinfo\x3a\x23CBA6F7\x2cpointer\x3a\x23F5E0DC\x20\x2d\x2dcolor\x3dmarker\x3a\x23B4BEFE\x2cfg\x2b\x3a\x23CDD6F4\x2cprompt\x3a\x23CBA6F7\x2chl\x2b\x3a\x23F38BA8\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x2345475A\x20\x2d\x2dcolor\x3dborder\x3a\x236C7086\x2clabel\x3a\x23CDD6F4
+SETUVAR --export --path PATH:/Users/maelho/\x2ebun/bin\x1e/opt/homebrew/bin\x1e/Users/maelho/\x2ebun/bin\x1e/Users/maelho/\x2ebun/bin\x1e/Users/maelho/\x2ebun/bin\x1e/Users/maelho/\x2ebun/bin\x1e/Users/maelho/Library/pnpm\x1e/Users/maelho/\x2ebun/bin\x1e/Users/maelho/\x2ecargo/bin\x1e/Users/maelho/\x2elocal/share/nvm/v24\x2e13\x2e0/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Applications/Ghostty\x2eapp/Contents/MacOS\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2eorbstack/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/\x2elmstudio/bin\x1e/Users/maelho/go/bin
+SETUVAR __fish_initialized:4300
+SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x231
+SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/catppuccin\x2dfrappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/catppuccin\x2dmacchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/catppuccin\x2dmocha\x2etheme\x1e\x7e/\x2econfig/fish/themes/static
+SETUVAR _fisher_edouard_2D_lopez_2F_ayu_2D_theme_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/ayu\x2ddark\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/ayu\x2dlight\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/ayu\x2dmirage\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/ayu\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish\x1ecatppuccin/fish\x1eedouard\x2dlopez/ayu\x2dtheme\x2efish\x1erose\x2dpine/fish
+SETUVAR _fisher_rose_2D_pine_2F_fish_files:\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Auto\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Dawn\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Moon\x20Auto\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Moon\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x2etheme
+SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR ayu_mirage:\x1d
+SETUVAR ayu_variant:light
+SETUVAR fish_color_autosuggestion:8A9199
+SETUVAR fish_color_cancel:FAFAFA
+SETUVAR fish_color_command:55B4D4
+SETUVAR fish_color_comment:ABB0B6
+SETUVAR fish_color_cwd:399EE6
+SETUVAR fish_color_cwd_root:fb9b8c
+SETUVAR fish_color_end:ED9366
+SETUVAR fish_color_error:F51818
+SETUVAR fish_color_escape:4CBF99
+SETUVAR fish_color_gray:737373
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:A37ACC
+SETUVAR fish_color_host_remote:A37ACC
+SETUVAR fish_color_keyword:ff8fc4\x1e\x2d\x2dbold
+SETUVAR fish_color_match:F07171
+SETUVAR fish_color_normal:575F66
+SETUVAR fish_color_operator:FF9940
+SETUVAR fish_color_option:b4b7f2
+SETUVAR fish_color_param:575F66
+SETUVAR fish_color_quote:86B300
+SETUVAR fish_color_redirection:A37ACC
+SETUVAR fish_color_search_match:\x2d\x2dbackground\x1eFF9940
+SETUVAR fish_color_selection:FF9940
+SETUVAR fish_color_status:fb9b8c
+SETUVAR fish_color_user:FA8D3E
+SETUVAR fish_color_valid_path:b2ffe3\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_background:\x2d\x2dbackground\x3d26202c
+SETUVAR fish_pager_color_completion:eee4ff
+SETUVAR fish_pager_color_description:6a5f78\x1e\x2d\x2ditalics
+SETUVAR fish_pager_color_prefix:ff8fc4\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:5d4869\x1e\x2d\x2ditalics
+SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3deee4ff
+SETUVAR fish_pager_color_selected_completion:26202c
+SETUVAR fish_pager_color_selected_description:26202c\x1e\x2d\x2ditalics
+SETUVAR fish_pager_color_selected_prefix:100f0f
+SETUVAR fish_user_paths:/opt/homebrew/bin
+SETUVAR nvm_default_version:v24\x2e13\x2e0

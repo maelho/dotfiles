@@ -1,0 +1,35 @@
+# hazyland-crimson — Fish Shell Colors
+# Adapted from hazyland-crimson (Helix) palette.
+# Place in config.fish or set via `set -U` commands.
+
+fish_color_normal                    e8daf8
+fish_color_command                   ff9dc4
+fish_color_keyword                   e8daf8 --bold
+fish_color_builtin                   ff9dc4
+fish_color_quote                     f2b8f5
+fish_color_error                     f07898
+fish_color_param                     e8daf8
+fish_color_valid_path                e8daf8 --underline
+fish_color_operator                  e8daf8
+fish_color_escape                    ff9dc4
+fish_color_comment                   876e98
+fish_color_redirection               9e8db8
+fish_color_end                       9e8db8
+fish_color_matching_paren            ff9dc4
+fish_color_search_match              e8daf8 --background=1e0c1b
+fish_color_history_current           e8daf8 --background=1e0c1b
+fish_color_selection                 e8daf8 --background=1e0c1b
+fish_color_autosuggestion            4a3860
+fish_color_number                    e8daf8
+fish_pager_color_description         9e8db8
+fish_pager_color_selected_completion e8daf8 --background=0b070e
+fish_pager_color_completion          e8daf8 --background=130d16
+fish_pager_color_selected_prefix     ff9dc4 --background=0b070e --bold
+fish_pager_color_prefix              ff9dc4
+fish_pager_color_selected_description 9e8db8 --background=0b070e
+fish_pager_color_background          --background=130d16
+fish_pager_color_secondary_background --background=130d16
+fish_pager_color_secondary_completion e8daf8 --background=130d16
+fish_pager_color_secondary_description 9e8db8 --background=130d16
+fish_pager_color_secondary_prefix    ff9dc4 --background=130d16
+fish_pager_color_progress            4a3860 --background=130d16
